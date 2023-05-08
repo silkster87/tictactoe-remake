@@ -1,0 +1,35 @@
+:root {
+  --tacBorder: 14px solid black;
+  --hoverColor: #bbf0ff;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 650px;
+  margin: auto;
+  border-top: var(--tacBorder);
+}
+
+.row:nth-of-type(3) {
+  border-bottom: var(--tacBorder);
+}
+.square {
+  border-left: var(--tacBorder);
+  height: 217px;
+  font-size: 5em;
+  text-align: center;
+  padding-top: 0.6em;
+}
+
+.square:last-child {
+  border-right: var(--tacBorder);
+}
+
+.clickableSquare {
+  cursor: pointer;
+}
+
+.clickableSquare:hover {
+  background-color: var(--hoverColor);
+}
